@@ -384,34 +384,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* =========================
-    NOTIFICATION POPUP
-    ========================= */
-
-    const popup =
-    document.getElementById(
-        'notificationPopup'
-    );
-
-    const notificationStatus =
-    localStorage.getItem(
-        'velrionaNotification'
-    );
-
-    if(notificationStatus !== 'enabled'){
-
-        setTimeout(() => {
-
-            if(popup){
-
-                popup.style.display = 'flex';
-
-            }
-
-        },1500);
-
-    }
-
-    /* =========================
     ACCEPT NOTIFICATIONS
     ========================= */
 
