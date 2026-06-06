@@ -383,26 +383,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    /* =========================
-    ACCEPT NOTIFICATIONS
-    ========================= */
-
-    window.acceptNotifications = function(){
-
-        localStorage.setItem(
-            'velrionaNotification',
-            'enabled'
-        );
-
-        if(popup){
-
-            popup.style.display = 'none';
-
-        }
-
-        alert(
-            '✅ Notifications Enabled Successfully'
-        );
 
         /* FAKE REMINDER */
 
@@ -415,21 +395,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },86400000);
 
     }
-
-    /* =========================
-    CLOSE NOTIFICATION POPUP
-    ========================= */
-
-    window.closeNotificationPopup = function(){
-
-        if(popup){
-
-            popup.style.display = 'none';
-
-        }
-
-    }
-
     /* =========================
     ENABLE / DISABLE BUTTONS
     ========================= */
